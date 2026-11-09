@@ -1,0 +1,36 @@
+/* Pied de page commun aux pages HTML du site. */
+.site-footer {
+  width: min(100%, 1160px);
+  margin: auto auto 0;
+  padding: 1.5rem 0 0;
+  border-top: 1px solid currentColor;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+}
+
+.site-footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.25rem;
+  margin-top: 0;
+}
+
+.site-footer nav a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.site-footer nav a:focus-visible {
+  outline: 3px solid #987b24;
+  outline-offset: 4px;
+}
+
+@media (max-width: 520px) {
+  .site-footer nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+}
